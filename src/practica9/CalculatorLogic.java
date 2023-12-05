@@ -30,10 +30,7 @@ public class CalculatorLogic {
         return this.result;
     }
 
-    /**
-     * La asignación ocurre en la variable operand.
-     * @param operand
-     */
+
     public void assignOperand(String operand) {
 
         // Ingreso 0 y el valor que ya esta almacenado en operand no es 0
@@ -56,16 +53,10 @@ public class CalculatorLogic {
 
     public void setOperator(String operator) {
 
-        /*
-        - result se actualiza en la operacion compute()
-        -- dicho método se invoca cuando se presiona el botón igual
-        dasda
-
-        */
 
         //Si no hay un valor almacenado en operando y no hay un resultado previo
         if ((this.operand.equals("")) && (this.result == 0)) {
-            return; //No hacemos nada
+            return;
         }
         else {
             // Si el operador es distinto de =
@@ -107,14 +98,6 @@ public class CalculatorLogic {
                 return;
         }
 
-    }
-
-    public boolean isEven() {
-        return Double.parseDouble(this.operand) % 2 == 0;
-    }
-
-    public boolean isIndetermination() {
-        return this.result != 0 && this.operand.equals("0");
     }
 
     public void resetLogic(){
