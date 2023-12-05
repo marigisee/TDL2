@@ -15,7 +15,7 @@ public class testConnection {
                 Class.forName("com.mysql.cj.jdbc.Driver");
 
                 // Establish a connection to the MySQL server
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mundial_futbol_2022", "tdl", "2001tdl");
+                Connection conn = DriverManager.getConnection(" ", " ", " ");
 
                 // Create a statement
                 Statement stmt = conn.createStatement();
